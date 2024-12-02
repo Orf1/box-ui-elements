@@ -14,7 +14,7 @@ class Browser {
      * @return {String} navigator userAgent
      */
     static getUserAgent(): string {
-        return global.navigator.userAgent;
+        return (global.navigator?.userAgent) ?? 'node';
     }
 
     /**
